@@ -1,0 +1,14 @@
+program ColMgr;
+
+uses
+  Vcl.Forms,
+  ColMgrMainForm in 'ColMgrMainForm.pas' {FormColMgrMain};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFormColMgrMain, FormColMgrMain);
+  Application.Run;
+end.
